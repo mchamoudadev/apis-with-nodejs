@@ -67,7 +67,6 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
 
 // diiwan gelin routes
 app.use('/users', userRoutes);
-app.use('/posts', postRoutes);
 app.use('/auth', authRoutes);
 app.use('/admin', adminRoutes);
 app.use('/upload', uploadRoutes);
