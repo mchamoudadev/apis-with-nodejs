@@ -1,0 +1,25 @@
+# Node.js dependencies
+node_modules/
+
+# dotenv secrets
+.env
+.env.* # if you use .env.production, etc.
+
+# Build/output folders (optional)
+dist/
+build/
+
+# Logs
+logs/
+*.log
+
+# Uploads (if using disk storage)
+uploads/
+
+# IDE settings
+.vscode/
+.idea/
+.DS_Store
+
+# Swagger cache (if any)
+swagger-output.json
