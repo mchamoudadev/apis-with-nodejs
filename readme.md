@@ -1,4 +1,4 @@
-- [ ] Github initialization
+- [✅] Github initialization
 - [✅] MongoDb Atlas
 - [ ] Render deployment
 - [✅] Environment variables
