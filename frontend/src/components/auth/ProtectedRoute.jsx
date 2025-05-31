@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
-import useAuthStore from '../../lib/store/authStore'
 import { useQuery } from '@tanstack/react-query'
-import api from '../../lib/api/apiClient'
-import { Navigate, useLocation } from 'react-router'
 import { Loader } from 'lucide-react'
+import React, { useEffect } from 'react'
+import { Navigate } from 'react-router'
+import api from '../../lib/api/apiClient'
+import useAuthStore from '../../lib/store/authStore'
 
 const ProtectedRoute = ({ children }) => {
 

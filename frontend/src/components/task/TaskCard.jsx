@@ -10,7 +10,9 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
+
+
 import { Calendar, Edit2, Loader, MoreVertical, Trash } from 'lucide-react';
 import { toast } from "sonner"
 

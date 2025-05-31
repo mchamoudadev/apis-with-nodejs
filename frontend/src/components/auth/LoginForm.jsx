@@ -1,10 +1,10 @@
-import { Card, CardHeader } from '@/components/ui/card'
+import { Card, CardHeader, CardContent, CardDescription, CardFooter, CardTitle } from '@/components/ui/card'
 import { LoaderCircle } from 'lucide-react'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router'
-import { Button } from '../ui/button'
-import { CardContent, CardDescription, CardFooter, CardTitle } from '../ui/card'
-import { Input } from '../ui/input'
+import { Button } from '@/components/ui/button'
+
+import { Input } from '@/components/ui/input'
 
 import { useMutation } from '@tanstack/react-query'
 import api from '../../lib/api/apiClient'

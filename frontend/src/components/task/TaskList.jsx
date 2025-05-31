@@ -1,7 +1,7 @@
 import { ClipboardCheck, Search } from 'lucide-react'
 import React, { useState } from 'react'
 
-import { Input } from '@/components/ui/Input'
+import { Input } from '@/components/ui/input'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
 import TaskCard from './TaskCard'
