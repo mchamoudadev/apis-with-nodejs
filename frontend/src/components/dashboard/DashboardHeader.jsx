@@ -2,7 +2,7 @@ import { ClipboardCheck } from 'lucide-react'
 import React from 'react'
 
 import useAuthStore from '../../lib/store/authStore';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router';
 import { useQueryClient } from '@tanstack/react-query';
 
