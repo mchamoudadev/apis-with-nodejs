@@ -17,7 +17,7 @@ export const register = async (req, res, next) => {
 
         const token = generateToken(user._id)
 
-        res.status(201).json({ token })
+        res.status(201).json({ "success": true, message: "User registered successfully" })
 
     } catch (err) {
         console.log("error", err)
@@ -41,7 +41,9 @@ export const login = async (req, res, next) => {
 
         const token = generateToken(user._id);
 
-        res.json({ token })
+        user.password = undefined
+
+        res.json({ token, user })
 
     } catch (err) {
         next(err)

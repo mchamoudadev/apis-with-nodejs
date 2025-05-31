@@ -4,7 +4,7 @@ import Task from "../models/Task.js";
 export const createTask = async (req, res, next) => {
 
     try {
-        const task = await Task.create({ ...req.body, createdBy: req.user._id })
+        const task = await Task.create({ ...req.body, createdBy: req.user._id });
         res.status(201).json(task)
     } catch (error) {
         next(error)
@@ -13,7 +13,7 @@ export const createTask = async (req, res, next) => {
 
 export const getMyTasks = async (req, res, next) => {
     try {
-        const tasks = await Task.find({ createdBy: req.user._id })
+        const tasks = await Task.find({ createdBy: req.user._id }).sort({ createdAt: -1 })
         res.json(tasks)
     } catch (error) {
         next(error)
